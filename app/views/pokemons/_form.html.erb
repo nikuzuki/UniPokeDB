@@ -23,12 +23,12 @@
 
   <div class="field">
     <%= f.label :type_1 %>
-    <%= f.number_field :type_1 %>
+    <%= f.select :type_1, options_from_collection_for_select(@types, :id, :name) %>
   </div>
 
   <div class="field">
     <%= f.label :type_2 %>
-    <%= f.number_field :type_2 %>
+    <%= f.select :type_2, options_from_collection_for_select(@types, :id, :name)  %>
   </div>
 
   <div class="actions">

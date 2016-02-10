@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :type_id %>
-    <%= f.number_field :type_id %>
+    <%= f.select :type_id, options_from_collection_for_select(@types, :id, :name) %>
   </div>
 
   <div class="field">

@@ -13,10 +13,12 @@ class WazasController < ApplicationController
   # GET /wazas/new
   def new
     @waza = Waza.new
+    @types = Type.all
   end
 
   # GET /wazas/1/edit
   def edit
+    @types = Type.all
   end
 
   # POST /wazas

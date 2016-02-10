@@ -13,10 +13,12 @@ class PokemonsController < ApplicationController
   # GET /pokemons/new
   def new
     @pokemon = Pokemon.new
+    @types = Type.all
   end
 
   # GET /pokemons/1/edit
   def edit
+    @types = Type.all
   end
 
   # POST /pokemons
