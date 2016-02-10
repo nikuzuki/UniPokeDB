@@ -1,0 +1,27 @@
+<%= form_for(waza) do |f| %>
+  <% if waza.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(waza.errors.count, "error") %> prohibited this waza from being saved:</h2>
+
+      <ul>
+      <% waza.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :type_id %>
+    <%= f.number_field :type_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

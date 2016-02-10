@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @waza.type_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @waza.name %>
+</p>
+
+<%= link_to 'Edit', edit_waza_path(@waza) %> |
+<%= link_to 'Back', wazas_path %>
