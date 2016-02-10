@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  all_world_number: 1
+  name: MyString
+  type_1: 1
+  type_2: 1
+
+two:
+  all_world_number: 1
+  name: MyString
+  type_1: 1
+  type_2: 1

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>All world number:</strong>
+  <%= @pokemon.all_world_number %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @pokemon.name %>
+</p>
+
+<p>
+  <strong>Type 1:</strong>
+  <%= @pokemon.type_1 %>
+</p>
+
+<p>
+  <strong>Type 2:</strong>
+  <%= @pokemon.type_2 %>
+</p>
+
+<%= link_to 'Edit', edit_pokemon_path(@pokemon) %> |
+<%= link_to 'Back', pokemons_path %>
