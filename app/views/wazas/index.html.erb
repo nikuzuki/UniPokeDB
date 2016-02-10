@@ -14,7 +14,7 @@
   <tbody>
     <% @wazas.each do |waza| %>
       <tr>
-        <td><%= waza.type_id %></td>
+        <td><%= Type.find_by(id: waza.type_id).name %></td>
         <td><%= waza.name %></td>
         <td><%= link_to 'Show', waza %></td>
         <td><%= link_to 'Edit', edit_waza_path(waza) %></td>
